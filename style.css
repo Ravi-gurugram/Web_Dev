@@ -1,0 +1,127 @@
+*{
+    padding:0;
+
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container{
+    width:100vw;
+    height:100vh;
+
+    overflow:none ;
+}
+
+.navContainer{
+  margin-right: 30px;
+    width:100vw;
+    background-color: mediumaquamarine ;
+   position:relative;
+    min-height: 60px;
+    align-items: center;
+    display:flex ; 
+    justify-content: space-between ;
+    
+}
+nav{
+    width:100%;
+    overflow-x: none;
+}
+#navList{
+    list-style: none;
+    display:flex ; 
+    justify-content: space-between ;
+margin-left:15px;
+margin-right:10px;
+align-items: center;
+}
+#navLogo{
+    font-size:30px;
+}
+a{
+    font-size:30px;
+    text-decoration: none;
+    color:white ;
+}
+#navItems{
+    display:flex ;
+    gap:40px ;
+    color:white ;
+    
+}
+.footerBox{
+    width:100%;
+     background-color: mediumaquamarine ;
+     text-align:center;
+     height:30px;
+     display:flex;
+     justify-content: center;
+     align-items:center ;
+}
+.contentBox{
+    width:50%;
+    margin:auto;
+    border:2px solid black ;
+    background-color:azure ; 
+    display:flex;
+    flex-direction: column;
+    gap:100px ;
+    box-shadow: 0px 0px 20px 10px grey ; 
+}
+.right:hover img{
+    transform: scale(1.1);
+    
+}
+.right{
+    position:relative;
+    overflow:hidden ;
+     margin:20px;
+}
+.item{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.right img{
+    
+   
+    height:250px;
+    width:250px ;
+    border-radius:20px;
+    transition: all 0.6s 0s linear  ;
+    
+}
+.left{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.right .overlay{
+    position:absolute;
+    padding:auto;
+    top:0;
+    left:0;
+    height:100% ;
+    width:100%;
+   border-radius:10px ;
+    background-color: rgba(36, 34, 34, 0.4);
+    display:flex ;
+    justify-content: center;    
+    align-items: center ;
+    opacity:0;
+    transition: all 0s 0.1s linear ;
+}
+
+.right .overlay span{
+    color:white ;
+    font-size: 1.2 rem ;
+    font-weight: bold;
+}
+
+.right:hover .overlay{
+    opacity:1;
+    
+}
+
+
+
